@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "lungeswap",
+	"version": "${version}",
+	"name": "Lunge Swap",
+	"description": "Hotkey: swap to a spear with Lunge, attack, then return to the previous hotbar slot.",
+	"authors": [
+		"You"
+	],
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.lungeswap.client.LungeSwapClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "lungeswap.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
